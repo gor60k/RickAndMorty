@@ -1,0 +1,41 @@
+.dropdown-list {
+    max-width: 285px;
+    width: 100%;
+    position: relative;
+
+    &-button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid $borger-color;
+        padding: 7px 10px;
+        border-radius: 5px;
+
+        &.open {
+            svg {
+                transform: rotate(180deg);
+                transition: .3s;
+            }
+        }
+
+        svg {
+            transition: .3s;
+        }
+    }
+
+    &-options {
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        background: white;
+        padding: 10px;
+        border: 1px solid $borger-color;
+        border-radius: 5px;
+    }
+}
